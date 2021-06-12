@@ -11,7 +11,7 @@ Battle01:
   LDA #$0100
   PHA
   PLD
-  LDA $02,X
+- LDA $02,X
   STA $4D83,X
   LDA $06,X
   STA $4D87,X
@@ -24,7 +24,7 @@ Battle01:
   ADC #$0010
   TAX
   CPX #$C0
-  BNE $96E1
+  BNE -
   LDA #$0000
   PHA
   PLD

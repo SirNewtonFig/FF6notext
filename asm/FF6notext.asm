@@ -18,9 +18,3 @@ incsrc "field_dialogue_handlers.asm"
 
 ; Relocate code from Battle Event handler 01 (display dialogue at bottom of screen)
 incsrc "battle_dialogue_handlers.asm"
-
-; Wrap field event code 86 (gain Esper) with a routine for displaying a
-;   custom dialogue box to indicate which Esper is being acquired. This
-;   is intended for use with randomizers, where you otherwise won't know
-;   which Esper you've received until looking at your menu.
-;incsrc "esper_handler.asm"
