@@ -34,9 +34,9 @@ Action86:
   lda #$02            ;   Advance event queue 2 bytes
   jmp $B1A3           ;   Queue it
 .default
-  jsr $ADBD
+  jsr $ADB8           ; Call the regular Action 86 handler from the start
   lda #$02
-  jmp $9B5C
+  jmp $9B5C           ; Advance event queue 2 bytes
 
 EsperMessage:         ; \n\t{4}Got the magicite "<esper>"
   db $01,$14,$04,$26,$48,$84,$83,$80,$D4,$40,$42,$3C,$A5,$80,$73,$1B,$62
