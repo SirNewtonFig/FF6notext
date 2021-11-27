@@ -10,7 +10,7 @@ incsrc "optimize_dialog.asm"
 ; Existing free space in C0 for new logic.
 ; This location is set for BNW, but can be as early as $C0D613 for vanilla
 
-!freespace = $C0DA17
+!freespace = $C0DB30
 ; !freespace = $C0D613
 
 ; Define logic for determining if dialogue should be skipped or displayed
